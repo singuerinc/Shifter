@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Shifter</title>
+    <style>
+        #el1, #el2, #el3 {
+            display: none;
+            font-family: Helvetica;
+            background-color: red;
+            width: 500px;
+            height: 200px;
+            color: white;
+            font-size: 50px;
+        }
+
+        #el2 {
+            background-color: green;
+        }
+
+        #el3 {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><a id="link1" href="#gallery">gallery</a></li>
+    <li><a id="link2" href="#gallery/photo/1">gallery/photo/1</a></li>
+    <li><a id="link3" href="#about">about</a></li>
+</ul>
+<div id="el1">about</div>
+<div id="el2">gallery/photo/:id</div>
+<div id="el3">*</div>
+<script src="../shifter.js"></script>
+<script src="./example.js"></script>
+<script>
+    var links = document.getElementsByTagName('a');
+    for (var i = 0; i < links.length; i++) {
+        links[i].addEventListener('click', function (event) {
+
+            var path = (event.target.getAttribute('href'));
+            shifter.shift(path);
+
+        });
+    }
+</script>
+</body>
+</html>
