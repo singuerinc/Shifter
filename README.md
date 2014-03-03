@@ -33,4 +33,4 @@ The "view" needs to implement a minimal interface in order to function with Shif
 
 Complete example [here](/example/example.js).
 
-See in action [here](/example/index.html).
+See in action [here](https://rawgithub.com/singuerinc/Shifter/master/example/index.html).
