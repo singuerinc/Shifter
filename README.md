@@ -25,7 +25,7 @@ The "view" needs to implement a minimal interface in order to function with Shif
 ```javascript
 function View(domEl) {
     this.transitionIn = function (callback) {
-        domEl.style.display = 'block';"
+        domEl.style.display = 'block';
         callback();
     };
     this.transitionOut = function (callback) {
