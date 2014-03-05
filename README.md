@@ -8,14 +8,14 @@ The main goal is to bring a simple api to manage states in a single page applica
 ## Getting started
 
 ```javascript
-var shifter = new Shifter();
+var s = new Shifter();
 
-shifter.match('about', view1);              // only visible in "about" state
-shifter.match('gallery/photo/:id', view2);  // visible on all photos state
-shifter.match('*', view3);                  // always visible
+s.match('about', view1);              // only visible in "about" state
+s.match('gallery/photo/:id', view2);  // visible on all photos state
+s.match('*', view3);                  // always visible
 
 // display view1 & view3
-shifter.shift('about');
+s.shift('about');
 ```
 
 ## Usage
