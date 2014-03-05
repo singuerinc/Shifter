@@ -3,7 +3,7 @@ var Shifter;
 Shifter = (function () {
 
     /**
-     * Shifter change view states based on a single path.
+     * Shifter changes view states based on a single path.
      * @constructor
      */
     var Shifter = function () {
@@ -19,7 +19,7 @@ Shifter = (function () {
     };
 
     /**
-     * Called after change state
+     * Called after Shifter changes a state
      * @param {string} path
      */
     Shifter.prototype.onShift;
@@ -130,7 +130,7 @@ Shifter = (function () {
         };
 
         /**
-         * @param {(string|RegExp)} pattern
+         * @param {string} pattern
          * @param view
          * @constructor
          */
